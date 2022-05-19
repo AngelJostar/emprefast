@@ -1,9 +1,92 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<ion-content class="container">
+  <div class="container block1 login-container">
+    <div class="box-label">
+      <div>
+        <img class="img-fluid logo" src="/assets/images/Group733.png" alt="" />
+      </div>
+      <ion-text color="primary">
+        <h3 class="fw-bolder fs-1 text-center">Iniciar Sesión</h3>
+      </ion-text>
+      <br />
+      <ion-text color="secondary">
+        <p class="text-center">Lorem-ipsum-dolor-sit-amet-consectetur</p>
+      </ion-text>
+      <br />
+      <form
+        method="POST"
+        action="http://localhost/public/login"
+        class="row g-3"
+      >
+        <input
+          type="hidden"
+          name="_token"
+          value="ufh4WICpblC12Fj9FZZTVXXy272MFcqqRifjp3H2"
+        />
+        <div class="col-md-12">
+          <ion-label class="fw-bold" color="secondary"
+            >Correo electrónico</ion-label
+          >
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="email"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="col-md-12">
+          <ion-label class="fw-bold" color="secondary">Contraseña</ion-label>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            id="password"
+            placeholder="contraseña"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            color="secondary"
+            name="remember"
+            id="remember"
+          />
+          <ion-label
+            class="form-check-label fw-bold pl-1 ms-1"
+            for="remember"
+            color="secondary"
+            >Recordarme</ion-label
+          >
+        </div>
+        <div class="col-md-6">
+          <a
+            href="http://localhost/public/password/reset"
+            class="Olvidaste-contraseña"
+          >
+            <ion-text color="success"> ¿Olvidaste tu contraseña? </ion-text>
+          </a>
+        </div>
+        <ion-button color="accent">
+          <ion-text color="bright">
+            <p class="position-relative m-0">Iniciar sesión</p>
+          </ion-text>
+        </ion-button>
+        <ion-button color="bright">
+          <ion-icon style="color: #0e76a8;" name="logo-linkedin" class=" mx-1"></ion-icon>
+          <ion-text color="secondary">
+            <p class="m-0">Ingresar con LinkedIn</p>
+          </ion-text>
+        </ion-button>
+      </form>
+      <br />
+      <div class="text-center" class="create-account">
+        <ion-text color="secondary"> ¿Aun no tienes cuenta? </ion-text>
+        <a href="http://localhost/public/register" class="Crear-cuenta">
+          <ion-text color="success link-success"> Crear cuenta </ion-text>
+        </a>
+      </div>
+    </div>
+    <span class="all-rights-reserved"> © EmpreFast. Derechos Reservados. </span>
+  </div>
 </ion-content>
